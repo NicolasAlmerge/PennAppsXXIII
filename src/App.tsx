@@ -73,12 +73,6 @@ export default function App() {
 		});
 	});
 
-	const data = {
-		location: "Nicolas",
-		shortTermValues: ["Fart less", "Breathe more"],
-		longTermValues: ["Eat more apples", "Relax more"],
-	};
-
 	return (
 		<>
 			<PageHeader />
@@ -90,7 +84,11 @@ export default function App() {
 				</div>
 				<div ref={mapContainer} className="map-container" />
 			</div>
-			<SideInfo fword={data} />
+			<SideInfo
+				locationName="Nicolas"
+				shortTermValues={["Fart less", "Breathe more"]}
+				longTermValues={["Eat more apples", "Relax more"]}
+			/>
 			<Footer />
 		</>
 	);
