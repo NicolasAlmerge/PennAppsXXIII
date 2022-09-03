@@ -1,35 +1,8 @@
 // @ts-nocheck
-
 import Footer from "./components/footer";
 import { PageHeader } from "./components/pageheader";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import React, { useRef, useEffect, useState } from "react";
-import { Slider } from "@mantine/core";
-import { useHover } from "@mantine/hooks";
-
-export function SliderHover() {
-	const { hovered, ref } = useHover();
-
-	return (
-		<Slider
-			defaultValue={8.44}
-			min={0.0}
-			max={22.0}
-			ref={ref}
-			label="Zoom"
-			styles={{
-				thumb: {
-					transition: "opacity 150ms ease",
-					opacity: hovered ? 1 : 0,
-				},
-
-				dragging: {
-					opacity: 1,
-				},
-			}}
-		/>
-	);
-}
 
 mapboxgl.accessToken = process.env.REACT_APP_PUBLIC_API_KEY;
 
@@ -70,7 +43,6 @@ export default function App() {
 				</div>
 				<div ref={mapContainer} className="map-container" />
 			</div>
-			<SliderHover />
 			<Footer />
 		</>
 	);
