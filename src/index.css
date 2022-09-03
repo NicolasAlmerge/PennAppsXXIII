@@ -78,10 +78,14 @@ code {
 }
 
 .sideinfo {
-	border: 1px solid black;
+	background-color: rgba(200, 200, 200);
+	border: 3px solid #38f294;
 	text-align: center;
 	display: inline-block;
 	padding: 30px 50px;
+	border-radius: 15px;
+	position: absolute;
+	display: none;
 }
 
 .sideinfo hr {

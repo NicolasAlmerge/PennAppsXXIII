@@ -43,7 +43,7 @@ export default function SideInfo({
 			>
 				Short Term Actions
 			</Text>
-			<List icon={<ListIcon />} withPadding children={shorts} />
+			<List icon={<ListIcon />} children={shorts} />
 			<br />
 			<Text
 				style={{
@@ -52,7 +52,7 @@ export default function SideInfo({
 			>
 				Long Term Actions
 			</Text>
-			<List icon={<ListIcon />} withPadding children={longs} />
+			<List icon={<ListIcon />} children={longs} />
 		</div>
 	);
 }
