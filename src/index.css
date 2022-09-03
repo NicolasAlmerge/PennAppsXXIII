@@ -64,6 +64,6 @@ code {
 }
 
 .trackertitle:hover {
-	color: gray;
+	color: rgb(175, 175, 175);
 	transition-duration: 0.3s;
 }

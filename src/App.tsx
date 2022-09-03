@@ -4,6 +4,7 @@ import PageHeader from "./components/pageheader";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import { useRef, useEffect, useState } from "react";
 import heat from "./data/heat_severity_vulnerability.geojson";
+import SideInfo from "./components/sideinfo";
 
 mapboxgl.accessToken = process.env.REACT_APP_PUBLIC_API_KEY;
 
@@ -72,17 +73,24 @@ export default function App() {
 		});
 	});
 
+	const data = {
+		location: "Nicolas",
+		shortTermValues: ["Fart less", "Breathe more"],
+		longTermValues: ["Eat more apples", "Relax more"],
+	};
+
 	return (
 		<>
 			<PageHeader />
 			<div>
 				<div className="sidebar">
-					<span class="first-elem">Longitude: {lng}</span>
-					<span class="second-elem">Latitude: {lat}</span>
-					<span class="third-elem">Zoom: {zoom}</span>
+					<span className="first-elem">Longitude: {lng}</span>
+					<span className="second-elem">Latitude: {lat}</span>
+					<span className="third-elem">Zoom: {zoom}</span>
 				</div>
 				<div ref={mapContainer} className="map-container" />
 			</div>
+			<SideInfo fword={data} />
 			<Footer />
 		</>
 	);

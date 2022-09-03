@@ -21,7 +21,6 @@ const useStyles = createStyles(theme => ({
 		color: theme.colors.dark[0],
 		fontSize: theme.fontSizes.sm,
 		fontWeight: 500,
-
 		"&:hover": {
 			backgroundColor: theme.colors.gray[6],
 		},
