@@ -9,11 +9,15 @@ import SideInfo from "./components/sideinfo";
 mapboxgl.accessToken = process.env.REACT_APP_PUBLIC_API_KEY;
 
 export default function App() {
+	const initialLongitude = (-75.1164).toFixed(4);
+	const initialLatitude = (39.9783).toFixed(4);
+	const initialZoom = (10).toFixed(2);
+
 	const mapContainer = useRef(null);
 	const map = useRef(null);
-	const [lng, setLng] = useState(-75.0951);
-	const [lat, setLat] = useState(39.883);
-	const [zoom, setZoom] = useState(8.44);
+	const [lng, setLng] = useState(initialLongitude);
+	const [lat, setLat] = useState(initialLatitude);
+	const [zoom, setZoom] = useState(initialZoom);
 
 	useEffect(() => {
 		if (map.current) return; // Initialize map only once
@@ -76,7 +80,7 @@ export default function App() {
 	return (
 		<>
 			<PageHeader />
-			<div>
+			<div className="outerbox">
 				<div className="sidebar">
 					<span className="first-elem">Longitude: {lng}</span>
 					<span className="second-elem">Latitude: {lat}</span>
@@ -84,11 +88,7 @@ export default function App() {
 				</div>
 				<div ref={mapContainer} className="map-container" />
 			</div>
-			<SideInfo
-				locationName="Nicolas"
-				shortTermValues={["Fart less", "Breathe more"]}
-				longTermValues={["Eat more apples", "Relax more"]}
-			/>
+
 			<Footer />
 		</>
 	);

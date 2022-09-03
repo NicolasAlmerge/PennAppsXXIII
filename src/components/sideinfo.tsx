@@ -6,6 +6,10 @@ interface InfoTuple {
 	longTermValues: string[];
 }
 
+export function ListIcon() {
+	return <img src="arrow.png" width="20px" alt="" />;
+}
+
 export default function SideInfo({
 	locationName,
 	shortTermValues,
@@ -23,12 +27,32 @@ export default function SideInfo({
 		: [];
 
 	return (
-		<>
-			<Text>{locationName}</Text>
-			<Text>Short Term</Text>
-			<List withPadding children={shorts} />
-			<Text>Long Term</Text>
-			<List withPadding children={longs} />
-		</>
+		<div className="sideinfo">
+			<Text
+				style={{
+					fontSize: "28px",
+				}}
+			>
+				{locationName}
+			</Text>
+			<hr />
+			<Text
+				style={{
+					fontSize: "20px",
+				}}
+			>
+				Short Term Actions
+			</Text>
+			<List icon={<ListIcon />} withPadding children={shorts} />
+			<br />
+			<Text
+				style={{
+					fontSize: "20px",
+				}}
+			>
+				Long Term Actions
+			</Text>
+			<List icon={<ListIcon />} withPadding children={longs} />
+		</div>
 	);
 }

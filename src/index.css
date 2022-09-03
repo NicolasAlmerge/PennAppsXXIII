@@ -12,8 +12,16 @@ code {
 		monospace;
 }
 
+.outerbox {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-bottom: 30px;
+}
+
 .map-container {
-	height: calc(100vh - 149px);
+	height: calc(100vh - 180px);
+	width: 95%;
+	margin: 0px auto;
+	border-radius: 15px;
 }
 
 .mapboxgl-ctrl-attrib,
@@ -27,7 +35,8 @@ code {
 	padding: 6px 12px;
 	z-index: 1;
 	position: absolute;
-	top: -100;
+	top: 150px;
+	left: 2.5vw;
 	margin: 12px;
 	border-radius: 4px;
 }
@@ -66,4 +75,27 @@ code {
 .trackertitle:hover {
 	color: rgb(175, 175, 175);
 	transition-duration: 0.3s;
+}
+
+.sideinfo {
+	border: 1px solid black;
+	text-align: center;
+	display: inline-block;
+	padding: 30px 50px;
+}
+
+.sideinfo hr {
+	border: dotted #38f294 6px;
+	border-bottom: none;
+	width: 75%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 539px) {
+	.headertitle,
+	.trackertitle,
+	.headerspace {
+		font-size: 36px;
+	}
 }

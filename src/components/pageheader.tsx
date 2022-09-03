@@ -16,7 +16,8 @@ export default function PageHeader() {
 				}}
 			>
 				<img src="../favicon-heat.svg" width="60px" alt=""></img>
-				<span className="headertitle">Heat Islands</span>{" "}
+				<span className="headertitle">Heat Islands</span>
+				<span className="headerspace"> </span>
 				<span className="trackertitle">Tracker</span>
 			</Text>
 			<NavBar />
