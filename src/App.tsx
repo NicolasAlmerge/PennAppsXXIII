@@ -33,7 +33,7 @@ export default function App() {
 		const marker2 = new mapboxgl.Marker()
 			.setLngLat([-75.18835, 39.995198])
 			.setPopup(
-				new mapboxgl.Popup().setHTML("<h3>Help this Heat Island</h3>")
+				new mapboxgl.Popup().setHTML(`<button type='button' onclick='"+alert("Success")+"'>Take Action</button>`)
 			) // add popup
 			.addTo(map.current);
 
