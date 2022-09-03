@@ -32,11 +32,13 @@ export default function App() {
 
 		const marker = new mapboxgl.Marker({
 			color: "rgb(229, 90, 84)",
-		});
+		})
+			.setLngLat([initialLongitude, initialLatitude])
+			.addTo(map.current);
 
-		map.current.on("click", event => {
+		/*map.current.on("click", event => {
 			marker.setLngLat(event.lngLat).addTo(map.current);
-		});
+		});*/
 
 		map.current.on("load", () => {
 			map.current.addSource("trees", {
