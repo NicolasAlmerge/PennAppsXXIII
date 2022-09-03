@@ -21,15 +21,16 @@ export default function App() {
 			center: [lng, lat],
 			zoom: zoom,
 		});
-	});
 
-	useEffect(() => {
-		if (!map.current) return; // Wait for map to initialize
-		map.current.on("move", () => {
-			setLng(map.current.getCenter().lng.toFixed(4));
-			setLat(map.current.getCenter().lat.toFixed(4));
-			setZoom(map.current.getZoom().toFixed(2));
-		});
+		const marker = new mapboxgl.Marker()
+			.setLngLat([-75.0951, 39.883])
+			.setPopup(new mapboxgl.Popup().setHTML("<h3>Help this Heat Island</h3>")) // add popup
+			.addTo(map.current)
+
+		const marker2 = new mapboxgl.Marker()
+			.setLngLat([-75.18835, 39.995198])
+			.setPopup(new mapboxgl.Popup().setHTML("<h3>Help this Heat Island</h3>")) // add popup
+			.addTo(map.current)
 	});
 
 	return (
