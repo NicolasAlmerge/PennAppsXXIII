@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./Contact";
 import SecretPage from "./secretpage";
+import Error404 from "./Error404";
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
@@ -20,6 +21,7 @@ root.render(
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/secret" element={<SecretPage />} />
+				<Route path="*" element={<Error404 />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
