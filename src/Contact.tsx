@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Container, Group, Grid, Space, Textarea, TextInput, Text } from "@mantine/core";
+import { createStyles, Button, Container, Group, Grid, Space, Textarea, TextInput, Text } from "@mantine/core";
 import { PageHeader } from './components/pageheader';
 import Footer from "./components/footer";
 
@@ -12,6 +12,15 @@ export default function Contact() {
 		console.log(inputObject);
 		return true
 	};
+
+	const useStyles = createStyles(() => ({
+		button: {
+			borderColor: "#11c269",
+			color: "#11c269"
+		}
+	}));
+
+	const { classes } = useStyles();
 
 	return (
 		<>
@@ -74,12 +83,14 @@ export default function Contact() {
 						<Button 
 							type="reset"
 							variant="outline"
+							className={classes.button}
 						>
 							Reset
 						</Button>
 						<Button
 							type="submit"
 							variant="outline"
+							className={classes.button}
 						>
 							Submit
 						</Button>
