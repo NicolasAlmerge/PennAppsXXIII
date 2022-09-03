@@ -12,9 +12,9 @@ export default function Footer() {
 			}}
 		>
 			Created by Nicolas Almerge, Nikolai Peram, Osman Warsi and Ethan
-			Frick for the PennApps XXIII event.
+			Frick
 			<br />
-			All rights reserved.
+			for the PennApps XXIII event. All rights reserved.
 		</Text>
 	);
 }
