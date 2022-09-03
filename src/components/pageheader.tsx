@@ -15,7 +15,7 @@ export function PageHeader() {
 					color: "white",
 				}}
 			>
-				Heat Islands Tracker
+				<span className="headertitle">Heat Islands Tracker</span>
 			</Text>
 			<NavBar />
 		</>

@@ -47,3 +47,13 @@ code {
 	padding-left: 10px;
 	border-left: 0.5px solid #fff;
 }
+
+.headertitle:hover {
+	background-image: url("../public/fire.gif");
+	background-clip: text;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition-duration: 0.5s;
+}
