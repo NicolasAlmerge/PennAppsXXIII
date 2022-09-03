@@ -4,9 +4,9 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import heat from "../data/heat_severity_vulnerability.json";
 
 interface IColouredMap {
-	lng: number;
-	lat: number;
-	zoom: number;
+	lng: string;
+	lat: string;
+	zoom: string;
 }
 
 export class ColouredMap extends React.Component<{}, IColouredMap> {
@@ -15,17 +15,14 @@ export class ColouredMap extends React.Component<{}, IColouredMap> {
 	constructor(props: any) {
 		super(props);
 		this.state = {
-			lng: -75.16,
-			lat: 39.95,
-			zoom: 10.39,
+			lng: (-75.1164).toFixed(4),
+			lat: (39.9783).toFixed(4),
+			zoom: (10).toFixed(2),
 		};
 		this.mapContainer = React.createRef();
 	}
 
-	processGeoLocation() {
-		for (let geoPoint in heat) {
-		}
-	}
+	processGeoLocation() {}
 
 	componentDidMount() {
 		const { lng, lat, zoom } = this.state;
@@ -93,7 +90,7 @@ export class ColouredMap extends React.Component<{}, IColouredMap> {
 	render() {
 		const { lng, lat, zoom } = this.state;
 		return (
-			<div>
+			<div className="outerbox">
 				<div className="sidebar">
 					Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
 				</div>
