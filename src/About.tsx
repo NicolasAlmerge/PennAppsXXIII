@@ -58,7 +58,10 @@ export default function About() {
 					breakpoints={[{ maxWidth: 768, cols: 1, spacing: "md" }]}
 				>
 					<div>
-						<Title order={3}>What are urban heat islands?</Title>
+						<Title order={3}>
+							What are urban heat islands?
+						</Title>
+						<Space h="md" />
 						<Text className={classes.txt}>
 							Cities and urban areas hold not only hundreds of
 							thousands of people, but also buildings and
@@ -74,7 +77,10 @@ export default function About() {
 						</Text>
 					</div>
 					<div>
-						<Title order={3}>Why should we care?</Title>
+						<Title order={3}>
+							Why should we care?
+						</Title>
+						<Space h="md" />
 						<Text className={classes.txt}>
 							As climate change worsens around the world, so too
 							have the effects of urban heat islands on nearby
@@ -99,13 +105,22 @@ export default function About() {
 				<Title order={2} color="white">
 					What are we doing about it?
 				</Title>
-				<SimpleGrid
+				<Space h="md" />
+				<SimpleGrid 
 					cols={2}
 					spacing="xl"
 					breakpoints={[{ maxWidth: 768, cols: 1, spacing: "md" }]}
 				>
-					<Text className={classes.txt} color="white">
-						fuck you we ain't doin shit
+					<Text 
+						className={classes.txt}
+						color="white"
+					>
+						This is where our app comes in, it is:
+						<ul>
+							<li>A <strong>map with heat data that shows the locations of the emergencies</strong></li>
+						<li>A <strong>message board for authorities to report said emergencies</strong> and <strong>state what immediate or long-term actions must be taken.</strong></li>
+						</ul>
+						With these tools, we help municipalities and local organizations pinpoint where aid is necessary and what must be done. Everyone, especially those most capable of helping, will better know the effects of heat in our cities, countless lives will be saved, and 
 					</Text>
 					<Image
 						radius="md"
