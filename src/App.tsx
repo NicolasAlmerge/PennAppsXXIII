@@ -88,7 +88,6 @@ export default function App() {
 				</div>
 				<div ref={mapContainer} className="map-container" />
 			</div>
-
 			<Footer />
 		</>
 	);
