@@ -32,7 +32,7 @@ const useStyles = createStyles(theme => ({
 	},
 }));
 
-export function NavBar() {
+export default function NavBar() {
 	const { classes } = useStyles();
 	const links = [
 		{

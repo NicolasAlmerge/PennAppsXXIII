@@ -1,6 +1,6 @@
 // @ts-nocheck
 import Footer from "./components/footer";
-import { PageHeader } from "./components/pageheader";
+import PageHeader from "./components/pageheader";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import { useRef, useEffect, useState } from "react";
 import heat from "./data/heat_severity_vulnerability.geojson";
@@ -65,7 +65,6 @@ export default function App() {
 
 	useEffect(() => {
 		if (!map.current) return; // Wait for map to initialize
-
 		map.current.on("move", () => {
 			setLng(map.current.getCenter().lng.toFixed(4));
 			setLat(map.current.getCenter().lat.toFixed(4));

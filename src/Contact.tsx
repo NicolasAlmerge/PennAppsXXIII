@@ -1,6 +1,16 @@
 import { useState } from "react";
-import { createStyles, Button, Container, Group, Grid, Space, Textarea, TextInput, Text } from "@mantine/core";
-import { PageHeader } from './components/pageheader';
+import {
+	createStyles,
+	Button,
+	Container,
+	Group,
+	Grid,
+	Space,
+	Textarea,
+	TextInput,
+	Text,
+} from "@mantine/core";
+import PageHeader from "./components/pageheader";
 import Footer from "./components/footer";
 
 export default function Contact() {
@@ -10,14 +20,14 @@ export default function Contact() {
 		e.preventDefault();
 		const inputObject = Object.fromEntries(new FormData(e.target));
 		console.log(inputObject);
-		return true
+		return true;
 	};
 
 	const useStyles = createStyles(() => ({
 		button: {
 			borderColor: "#11c269",
-			color: "#11c269"
-		}
+			color: "#11c269",
+		},
 	}));
 
 	const { classes } = useStyles();
@@ -25,19 +35,18 @@ export default function Contact() {
 	return (
 		<>
 			<PageHeader />
-			<Space h="md"/>
+			<Space h="md" />
 			<form onSubmit={submitForm}>
 				<Container>
-					<Text style={{
-						fontSize: "48px",
-						fontWeight: "bolder"
-					}}
+					<Text
+						style={{
+							fontSize: "48px",
+							fontWeight: "bolder",
+						}}
 					>
 						Contact Us!
 					</Text>
-					<Grid 
-						justify="center"
-					>
+					<Grid justify="center">
 						<Grid.Col span={6}>
 							<TextInput
 								name="first-name"
@@ -78,10 +87,10 @@ export default function Contact() {
 						minRows={8}
 						required
 						withAsterisk
-					/>	
+					/>
 					<Space h="xl" />
 					<Group grow>
-						<Button 
+						<Button
 							type="reset"
 							variant="outline"
 							className={classes.button}

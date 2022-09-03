@@ -1,7 +1,7 @@
 import { Text } from "@mantine/core";
-import { NavBar } from "./navbar";
+import NavBar from "./navbar";
 
-export function PageHeader() {
+export default function PageHeader() {
 	return (
 		<>
 			<Text
@@ -15,7 +15,7 @@ export function PageHeader() {
 					color: "white",
 				}}
 			>
-				<img src='../favicon-heat.svg' width={ '60px' }></img>
+				<img src="../favicon-heat.svg" width={"60px"}></img>
 				<span className="headertitle">Heat Islands</span>{" "}
 				<span className="trackertitle">Tracker</span>
 			</Text>
