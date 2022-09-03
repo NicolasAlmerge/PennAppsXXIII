@@ -30,13 +30,19 @@ export default function App() {
 			dragRotate: false,
 		});
 
-		const marker = new mapboxgl.Marker({
-			color: "rgb(229, 90, 84)",
-		});
+	const marker1 = new mapboxgl.Marker()
+		.setLngLat([-75.0951, 39.883])
+		.setPopup(
+			new mapboxgl.Popup().setHTML("<h3>Help this Heat Island</h3>")
+		)
+		.addTo(map.current);
 
-		map.current.on("click", event => {
-			marker.setLngLat(event.lngLat).addTo(map.current);
-		});
+	const marker2 = new mapboxgl.Marker()
+		.setLngLat([-75.18835, 39.995198])
+		.setPopup(
+			new mapboxgl.Popup().setHTML(<h1>DOM CONTENT</h1>)
+		) // add popup
+		.addTo(map.current);
 
 		map.current.on("load", () => {
 			map.current.addSource("trees", {
