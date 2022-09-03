@@ -13,10 +13,11 @@ code {
 }
 
 .map-container {
-	height: 790px;
+	height: calc(100vh - 149px);
 }
 
-.mapboxgl-ctrl-attrib {
+.mapboxgl-ctrl-attrib,
+.mapboxgl-ctrl-bottom-left {
 	display: none;
 }
 

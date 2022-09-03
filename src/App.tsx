@@ -2,7 +2,7 @@
 import Footer from "./components/footer";
 import { PageHeader } from "./components/pageheader";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import heat from "./data/heat_severity_vulnerability.geojson";
 
 mapboxgl.accessToken = process.env.REACT_APP_PUBLIC_API_KEY;
@@ -27,7 +27,7 @@ export default function App() {
 			.setLngLat([-75.0951, 39.883])
 			.setPopup(
 				new mapboxgl.Popup().setHTML("<h3>Help this Heat Island</h3>")
-			) // add popup
+			)
 			.addTo(map.current);
 
 		const marker2 = new mapboxgl.Marker()
