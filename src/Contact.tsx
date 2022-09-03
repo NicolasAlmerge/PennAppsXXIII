@@ -75,6 +75,7 @@ export default function Contact() {
 						id="message"
 						label="Message"
 						placeholder="Message"
+						minRows={8}
 						required
 						withAsterisk
 					/>	
