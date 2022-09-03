@@ -76,7 +76,6 @@ export function NavBar() {
 				borderBottom: 0,
 				backgroundColor: "rgba(0, 0, 0, 0.8);",
 			}}
-			mb={120}
 		>
 			<Container className={classes.inner} fluid>
 				<Group

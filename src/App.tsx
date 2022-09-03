@@ -9,8 +9,8 @@ mapboxgl.accessToken = process.env.REACT_APP_PUBLIC_API_KEY;
 export default function App() {
 	const mapContainer = useRef(null);
 	const map = useRef(null);
-	const [lng, setLng] = useState(-74.9453);
-	const [lat, setLat] = useState(39.9824);
+	const [lng, setLng] = useState(-75.0951);
+	const [lat, setLat] = useState(39.883);
 	const [zoom, setZoom] = useState(8.44);
 
 	useEffect(() => {
