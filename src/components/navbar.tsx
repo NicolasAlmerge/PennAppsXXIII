@@ -67,7 +67,7 @@ export default function NavBar() {
 			height={HEADER_HEIGHT}
 			sx={{
 				borderBottom: 0,
-				backgroundColor: "rgba(0, 0, 0, 0.8);",
+				backgroundColor: "rgba(0, 0, 0, 0.8)",
 			}}
 		>
 			<Container className={classes.inner} fluid>
