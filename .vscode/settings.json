@@ -1,4 +1,6 @@
 {
+	"prettier.useTabs": true,
 	"prettier.tabWidth": 4,
-	"prettier.useTabs": true
+	"prettier.arrowParens": "avoid",
+	"prettier.enable": true
 }
