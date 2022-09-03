@@ -6,7 +6,7 @@ export default function Footer() {
 			style={{
 				textAlign: "center",
 				color: "white",
-				backgroundColor: "rgb(34, 138, 230)",
+				backgroundColor: "#11c269",
 				paddingTop: "50px",
 				paddingBottom: "50px",
 			}}
