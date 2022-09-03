@@ -2,7 +2,7 @@ import { createStyles, Header, Container, Group, Text } from "@mantine/core";
 
 const HEADER_HEIGHT = 60;
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(theme => ({
 	inner: {
 		height: HEADER_HEIGHT,
 		display: "flex",
@@ -10,17 +10,7 @@ const useStyles = createStyles((theme) => ({
 		alignItems: "center",
 	},
 
-	links: {
-		[theme.fn.smallerThan("sm")]: {
-			display: "none",
-		},
-	},
-
-	burger: {
-		[theme.fn.largerThan("sm")]: {
-			display: "none",
-		},
-	},
+	links: {},
 
 	link: {
 		display: "block",
@@ -64,7 +54,7 @@ export function NavBar() {
 			label: "Contact",
 		},
 	];
-	const items = links.map((link) => {
+	const items = links.map(link => {
 		return (
 			<a key={link.label} href={link.link} className={classes.link}>
 				<Text

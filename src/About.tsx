@@ -2,7 +2,7 @@ import { Text } from "@mantine/core";
 import Footer from "./components/footer";
 import { PageHeader } from "./components/pageheader";
 
-export function About() {
+export default function About() {
 	return (
 		<>
 			<PageHeader />
