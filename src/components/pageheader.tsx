@@ -15,7 +15,8 @@ export function PageHeader() {
 					color: "white",
 				}}
 			>
-				<span className="headertitle">Heat Islands Tracker</span>
+				<span className="headertitle">Heat Islands</span>{" "}
+				<span className="trackertitle">Tracker</span>
 			</Text>
 			<NavBar />
 		</>
