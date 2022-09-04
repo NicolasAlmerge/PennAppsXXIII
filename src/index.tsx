@@ -6,7 +6,6 @@ import About from "./About";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./Contact";
-import SecretPage from "./secretpage";
 import Error404 from "./Error404";
 
 const root = ReactDOM.createRoot(
@@ -20,7 +19,6 @@ root.render(
 				<Route path="/" element={<App />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/secret" element={<SecretPage />} />
 				<Route path="*" element={<Error404 />} />
 			</Routes>
 		</BrowserRouter>
