@@ -42,6 +42,7 @@ export default function Contact() {
 		<>
 			<PageHeader />
 			<Space h="md" />
+			<Space h="md" />
 			<form onSubmit={submitForm}>
 				<Container>
 					<Space h="xl" />
@@ -51,7 +52,23 @@ export default function Contact() {
 							fontWeight: "bolder",
 						}}
 					>
-						Contact Us!
+						Contact Us
+					</Text>
+					<Text
+						style={{
+							fontSize: "30px",
+							fontStyle: "italic",
+						}}
+					>
+						Wanna chat? You have a question?
+					</Text>
+					<Text
+						style={{
+							fontSize: "30px",
+							fontStyle: "italic",
+						}}
+					>
+						Get in touch with us!
 					</Text>
 					<Space h="xl" />
 					<Space h="xl" />
@@ -114,9 +131,7 @@ export default function Contact() {
 			<Space h="xl" />
 			<Space h="xl" />
 			<Space h="xl" />
-			<div className="footer">
-				<Footer />
-			</div>
+			<Footer />
 		</>
 	);
 }
