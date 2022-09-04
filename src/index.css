@@ -101,6 +101,12 @@ code {
 	margin-bottom: 25px;
 }
 
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
 @media screen and (max-width: 539px) {
 	.headertitle,
 	.trackertitle,

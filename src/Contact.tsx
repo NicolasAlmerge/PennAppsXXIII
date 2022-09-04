@@ -27,6 +27,12 @@ export default function Contact() {
 		button: {
 			borderColor: "#11c269",
 			color: "#11c269",
+			transition: "color 0.2s, background-color 0.2s",
+			"&:hover": {
+				backgroundColor: "#11c269",
+				color: "white",
+				transition: "color 0.2s, background-color 0.2s",
+			},
 		},
 	}));
 
@@ -38,6 +44,7 @@ export default function Contact() {
 			<Space h="md" />
 			<form onSubmit={submitForm}>
 				<Container>
+					<Space h="xl" />
 					<Text
 						style={{
 							fontSize: "48px",
@@ -46,48 +53,45 @@ export default function Contact() {
 					>
 						Contact Us!
 					</Text>
+					<Space h="xl" />
+					<Space h="xl" />
 					<Grid justify="center">
 						<Grid.Col span={6}>
 							<TextInput
 								name="first-name"
 								id="first-name"
-								label="First Name"
 								placeholder="First Name"
 								required
-								withAsterisk
 							/>
 						</Grid.Col>
 						<Grid.Col span={6}>
 							<TextInput
 								name="last-name"
 								id="last-name"
-								label="Last Name"
 								placeholder="Last Name"
 								required
-								withAsterisk
 							/>
 						</Grid.Col>
+						<br />
 						<Grid.Col span={12}>
 							<TextInput
 								name="email"
 								id="email"
-								label="Email"
+								type="email"
 								placeholder="Email"
 								required
-								withAsterisk
 							/>
 						</Grid.Col>
 					</Grid>
-					<Space h="xl" />
+					<br />
 					<Textarea
 						name="message"
 						id="message"
-						label="Message"
 						placeholder="Message"
 						minRows={8}
 						required
-						withAsterisk
 					/>
+					<Space h="xl" />
 					<Space h="xl" />
 					<Group grow>
 						<Button
@@ -107,8 +111,9 @@ export default function Contact() {
 					</Group>
 				</Container>
 			</form>
-			<Space h="md" />
-			<Footer />
+			<div className="footer">
+				<Footer />
+			</div>
 		</>
 	);
 }
