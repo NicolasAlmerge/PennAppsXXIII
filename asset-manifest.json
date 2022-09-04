@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.66337136.css",
-    "main.js": "/static/js/main.d404b62f.js",
-    "static/js/787.33923132.chunk.js": "/static/js/787.33923132.chunk.js",
-    "static/media/fire.gif": "/static/media/fire.02e7cbf9d5f586f6dda7.gif",
-    "index.html": "/index.html",
-    "main.66337136.css.map": "/static/css/main.66337136.css.map",
-    "main.d404b62f.js.map": "/static/js/main.d404b62f.js.map",
-    "787.33923132.chunk.js.map": "/static/js/787.33923132.chunk.js.map"
+    "main.css": "/heatislandtracker/static/css/main.ed51b4cc.css",
+    "main.js": "/heatislandtracker/static/js/main.0bc35b5f.js",
+    "static/js/787.33923132.chunk.js": "/heatislandtracker/static/js/787.33923132.chunk.js",
+    "static/media/fire.gif": "/heatislandtracker/static/media/fire.02e7cbf9d5f586f6dda7.gif",
+    "index.html": "/heatislandtracker/index.html",
+    "main.ed51b4cc.css.map": "/heatislandtracker/static/css/main.ed51b4cc.css.map",
+    "main.0bc35b5f.js.map": "/heatislandtracker/static/js/main.0bc35b5f.js.map",
+    "787.33923132.chunk.js.map": "/heatislandtracker/static/js/787.33923132.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66337136.css",
-    "static/js/main.d404b62f.js"
+    "static/css/main.ed51b4cc.css",
+    "static/js/main.0bc35b5f.js"
   ]
 }
