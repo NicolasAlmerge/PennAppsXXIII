@@ -18,6 +18,7 @@ export default function About() {
 
 		statement: {
 			fontSize: "84px",
+			transition: "all 100ms",
 
 			"@media (max-width: 768px)": {
 				fontSize: "56px",
@@ -27,11 +28,19 @@ export default function About() {
 		greenContainer: {
 			backgroundColor: "#11c269",
 			padding: "80px",
+
+			"@media (max-width: 768px)": {
+				padding: "40px"
+			}
 		},
 
 		whiteContainer: {
 			backgroundColor: "white",
 			padding: "80px",
+
+			"@media (max-width: 768px)": {
+				padding: "40px"
+			}
 		},
 	}));
 
@@ -111,42 +120,48 @@ export default function About() {
 					spacing="xl"
 					breakpoints={[{ maxWidth: 768, cols: 1, spacing: "md" }]}
 				>
-					<Text 
-						className={classes.txt}
-						color="white"
-					>
-						This is where our app comes in, it is:
-						<ul>
-							<li>A <strong>map with heat data that shows the locations of the emergencies</strong></li>
-						<li>A <strong>message board for authorities to report said emergencies</strong> and <strong>state what immediate or long-term actions must be taken.</strong></li>
-						</ul>
-						We will be able to inform local authorities of emergencies in the nearby area where intervention is immediately needed, and pinpoint areas that are affecting nearby communities most. The app will list solutions that apply to that area in their situations.
-						<br />
-						<br />
-						Shown is a map of Philadelphia, where our app was originally built, highlighting the areas most vulnerable to heat-related deaths; the amount of areas in yellow and above demonstrate the brevity of this issue. People are <strong>dying of preventable causes</strong>.
-						<br />
-						<br />
-						With these tools, we help municipalities and local organizations pinpoint where aid is necessary and what must be done. Everyone, especially those most capable of helping, will better know the effects of heat in our cities, countless lives will be saved, and we will aid the struggle against climate change and its dire consequences.
-						<br />
-						<br />
-						
-					</Text>
-					<Image
-						radius="md"
-						src="https://scholar.harvard.edu/files/styles/os_files_xxlarge/public/ccwagner/files/heatvulnerabilityindex_map.png?m=1592934731&itok=M3u7RXP0"
-					/>
-					<Space />
-					<Title order={6} color="white">
+					<div>
+						<Text 
+							className={classes.txt}
+							color="white"
+						>
+							This is where our app comes in, it is:
+							<ul>
+								<li>A <strong>map with heat data that shows the locations of the emergencies</strong></li>
+							<li>A <strong>message board for authorities to report said emergencies</strong> and <strong>state what immediate or long-term actions must be taken.</strong></li>
+							</ul>
+							We will be able to inform local authorities of emergencies in the nearby area where intervention is immediately needed, and pinpoint areas that are affecting nearby communities most. The app will list solutions that apply to that area in their situations.
+							<br />
+							<br />
+							Shown is a map of Philadelphia, where our app was originally built, highlighting the areas most vulnerable to heat-related deaths; the amount of areas in yellow and above demonstrate the brevity of this issue. People are <strong>dying of preventable causes</strong>.
+							<br />
+							<br />
+							With these tools, we help municipalities and local organizations pinpoint where aid is necessary and what must be done. Everyone, especially those most capable of helping, will better know the effects of heat in our cities, countless lives will be saved, and we will aid the struggle against climate change and its dire consequences.
+							<br />
+							<br />
+							
+						</Text>
+					</div>
+					<div>
+						<Image
+							radius="md"
+							src="https://scholar.harvard.edu/files/styles/os_files_xxlarge/public/ccwagner/files/heatvulnerabilityindex_map.png?m=1592934731&itok=M3u7RXP0"
+						/>
+						<Space h="md" />
+						<Title order={6} color="white">
 						Source:{" "}
 						<a
 							href="https://scholar.harvard.edu/ccwagner/heat-vulnerability-philadelphia"
 							style={{
 								color: "white",
+								maxWidth: "400px"
 							}}
 						>
 							Harvard
 						</a>
 					</Title>
+					</div>
+					
 				</SimpleGrid>
 			</div>
 			<Footer />
