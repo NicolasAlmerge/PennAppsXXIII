@@ -111,6 +111,9 @@ export default function Contact() {
 					</Group>
 				</Container>
 			</form>
+			<Space h="xl" />
+			<Space h="xl" />
+			<Space h="xl" />
 			<div className="footer">
 				<Footer />
 			</div>

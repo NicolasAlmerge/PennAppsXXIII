@@ -7,8 +7,8 @@ export default function Footer() {
 				textAlign: "center",
 				color: "white",
 				backgroundColor: "#11c269",
-				paddingTop: "50px",
-				paddingBottom: "50px",
+				paddingTop: "30px",
+				paddingBottom: "30px",
 			}}
 		>
 			Created by Nicolas Almerge, Nikolai Peram, Osman Warsi and Ethan
