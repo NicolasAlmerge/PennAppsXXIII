@@ -1,4 +1,6 @@
 import { List, Text } from "@mantine/core";
+import { StatsCard } from './stats';
+import { ButtonCopy } from './button';
 
 interface InfoTuple {
 	locationName: string;
@@ -28,30 +30,17 @@ export default function SideInfo({
 
 	return (
 		<div className="sideinfo">
-			<Text
-				style={{
-					fontSize: "28px",
-				}}
-			>
-				{locationName}
-			</Text>
-			<hr />
-			<Text
-				style={{
-					fontSize: "20px",
-				}}
-			>
-				Short Term Actions
-			</Text>
+			< StatsCard />
 			<List icon={<ListIcon />} children={shorts} />
 			<br />
-			<Text
-				style={{
-					fontSize: "20px",
-				}}
-			>
-				Long Term Actions
-			</Text>
+
+			< ButtonCopy />
+			< StatsCard />
+
+			<List icon={<ListIcon />} children={shorts} />
+			<br />
+
+			< ButtonCopy />
 			<List icon={<ListIcon />} children={longs} />
 		</div>
 	);

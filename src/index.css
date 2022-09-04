@@ -24,6 +24,20 @@ code {
 	border-radius: 15px;
 }
 
+.sideinfo {
+	background-color: white;
+	border: 3px solid #38f294;
+	text-align: center;
+	display: inline-block;
+	padding: 30px 50px;
+	border-radius: 15px;
+	position: absolute;
+	width: 18%;
+	height: 70%;
+	right: 25px;
+	top: 155px;
+}
+
 .mapboxgl-ctrl-attrib,
 .mapboxgl-ctrl-bottom-left {
 	display: none;
@@ -77,15 +91,7 @@ code {
 	transition-duration: 0.3s;
 }
 
-.sideinfo {
-	background-color: rgba(200, 200, 200);
-	border: 3px solid #38f294;
-	text-align: center;
-	display: inline-block;
-	padding: 30px 50px;
-	border-radius: 15px;
-	position: absolute;
-}
+
 
 .sideinfo hr {
 	border: dotted #38f294 6px;
