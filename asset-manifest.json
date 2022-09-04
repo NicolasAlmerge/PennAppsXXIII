@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PennAppsXXIII/static/css/main.0529e488.css",
+    "main.js": "/PennAppsXXIII/static/js/main.a8cef841.js",
+    "static/js/787.33923132.chunk.js": "/PennAppsXXIII/static/js/787.33923132.chunk.js",
+    "static/media/fire.gif": "/PennAppsXXIII/static/media/fire.02e7cbf9d5f586f6dda7.gif",
+    "index.html": "/PennAppsXXIII/index.html",
+    "main.0529e488.css.map": "/PennAppsXXIII/static/css/main.0529e488.css.map",
+    "main.a8cef841.js.map": "/PennAppsXXIII/static/js/main.a8cef841.js.map",
+    "787.33923132.chunk.js.map": "/PennAppsXXIII/static/js/787.33923132.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0529e488.css",
+    "static/js/main.a8cef841.js"
+  ]
+}
