@@ -120,7 +120,16 @@ export default function About() {
 							<li>A <strong>map with heat data that shows the locations of the emergencies</strong></li>
 						<li>A <strong>message board for authorities to report said emergencies</strong> and <strong>state what immediate or long-term actions must be taken.</strong></li>
 						</ul>
-						With these tools, we help municipalities and local organizations pinpoint where aid is necessary and what must be done. Everyone, especially those most capable of helping, will better know the effects of heat in our cities, countless lives will be saved, and 
+						We will be able to inform local authorities of emergencies in the nearby area where intervention is immediately needed, and pinpoint areas that are affecting nearby communities most. The app will list solutions that apply to that area in their situations.
+						<br />
+						<br />
+						Shown is a map of Philadelphia, where our app was originally built, highlighting the areas most vulnerable to heat-related deaths; the amount of areas in yellow and above demonstrate the brevity of this issue. People are <strong>dying of preventable causes</strong>.
+						<br />
+						<br />
+						With these tools, we help municipalities and local organizations pinpoint where aid is necessary and what must be done. Everyone, especially those most capable of helping, will better know the effects of heat in our cities, countless lives will be saved, and we will aid the struggle against climate change and its dire consequences.
+						<br />
+						<br />
+						
 					</Text>
 					<Image
 						radius="md"
