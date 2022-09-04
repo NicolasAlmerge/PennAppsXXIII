@@ -19,8 +19,8 @@ code {
 
 .map-container {
 	height: calc(100vh - 150px - 2.5vw);
-	width: 95%;
-	margin: 0px auto;
+	width: 70%;
+	margin-left: 2.5vw;
 	border-radius: 15px;
 }
 
@@ -73,7 +73,7 @@ code {
 }
 
 .trackertitle:hover {
-	color: #84F484;
+	color: #84f484;
 	transition-duration: 0.3s;
 }
 
