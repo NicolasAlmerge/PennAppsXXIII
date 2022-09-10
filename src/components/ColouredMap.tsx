@@ -3,6 +3,7 @@ import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-load
 import "mapbox-gl/dist/mapbox-gl.css";
 import heat from "../data/heat_severity_vulnerability.json";
 
+
 interface IColouredMap {
 	lng: string;
 	lat: string;
@@ -42,6 +43,21 @@ export class ColouredMap extends React.Component<{}, IColouredMap> {
 			.setLngLat([-74.9869, 40.1149])
 			.setPopup(new mapboxgl.Popup().setHTML("<h3>Help this Heat Island</h3>")) // add popup
 			.addTo(map)
+
+        let markerel = marker1.getElement();
+
+        markerel.addEventListener('click', (e: React.MouseEvent<HTMLElement>) => {
+            console.log('clicked!')
+            console.log(e)
+        })
+
+        let markere2 = marker2.getElement();
+        
+        markere2.addEventListener('click', (e: React.MouseEvent<HTMLElement>) => {
+            console.log('clicked!')
+            console.log(e)
+        })
+            
 
 		map.on("move", () => {
 			this.setState({
@@ -109,3 +125,4 @@ export class ColouredMap extends React.Component<{}, IColouredMap> {
 		);
 	}
 }
+  

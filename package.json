@@ -6,19 +6,27 @@
 		"@emotion/react": "^11.10.4",
 		"@mantine/core": "^5.2.4",
 		"@mantine/hooks": "^5.2.4",
+		"@reduxjs/toolkit": "^1.8.5",
 		"@tabler/icons": "^1.92.0",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.3.0",
 		"@testing-library/user-event": "^13.5.0",
+		"@types/geojson": "^7946.0.10",
 		"@types/jest": "^27.5.2",
+		"@types/leaflet": "^1.7.11",
+		"@types/mapbox-gl": "^2.7.5",
 		"@types/node": "^16.11.56",
+		"@types/ol": "^6.5.3",
 		"@types/react": "^18.0.18",
 		"@types/react-dom": "^18.0.6",
 		"mapbox-gl": "^2.9.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-redux": "^8.0.2",
 		"react-router-dom": "^6.3.0",
 		"react-scripts": "5.0.1",
+		"redux": "^4.2.0",
+		"redux-thunk": "^2.4.1",
 		"typescript": "^4.8.2",
 		"web-vitals": "^2.1.4"
 	},
@@ -45,5 +53,10 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"@types/react-redux": "^7.1.24",
+		"@types/redux": "^3.6.0",
+		"@types/redux-thunk": "^2.1.0"
 	}
 }

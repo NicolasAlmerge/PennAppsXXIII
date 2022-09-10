@@ -5,24 +5,28 @@ import App from "./App";
 import About from "./About";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Provider } from 'react-redux';
 import Contact from "./Contact";
 import Error404 from "./Error404";
+import store from './store';
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
 );
 
 root.render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<App />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="*" element={<Error404 />} />
-			</Routes>
-		</BrowserRouter>
-	</React.StrictMode>
+	<Provider store={store}>
+		<React.StrictMode>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<App />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="*" element={<Error404 />} />
+				</Routes>
+			</BrowserRouter>
+		</React.StrictMode>
+	</Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -4,6 +4,7 @@ import PageHeader from "./components/pageheader";
 import { ColouredMap } from "./components/ColouredMap";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import SideInfo from "./components/sideinfo";
+import { ColouredMapTwo } from "./components/ColouredMapTwo";
 
 mapboxgl.accessToken = process.env.REACT_APP_PUBLIC_API_KEY;
 
@@ -11,7 +12,7 @@ export default function App() {
 	return (
 		<>
 			<PageHeader />
-			<ColouredMap />
+			<ColouredMapTwo />
 			<SideInfo />
 			<Footer />
 		</>
